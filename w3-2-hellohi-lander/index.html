@@ -1,71 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>opdracht 3-1</title>
-
+  <meta charset="UTF-8">
+  <title>Abonnementsformulier Hallo Hi</title>
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="https://www.google.com/">internet + bellen</a></li>
-            <li><a href="https://www.google.com/">mobiel</a></li>
-            <li><a href="https://www.google.com/">entertainment</a></li>
-            <li><a href="https://www.google.com/">service</a></li>
-        </ul>
-    </nav>
-    <header>
-        <main>
 
-            <h1>Hallo hi</h1></header>
-                     
-            <section>
-                <p>Hallo, Internet + Bellen van Hallo Hi...</p>
-                <p>kies uit.......</p>
-                <button>bekijk deal</button>
-                <button>ontdek meer</button>
-            </section>
-            <section>
-                <h2>het beste van TV en Mobiel</h2>
-                <p>geen aansluit kosten en volop extra voordelen</p>
-                <ul>
-                <li>onbeperkt data</li>
-                <li>39,95/mnd</li>
-                <li>snelheid tot 1Gbit/s</li>
-                <li> zelf je pakket samen</li>
-                </ul>
-                <img src="" alt="">
-                <button>ontdek Mobiel en TV</button>
+  <h1>Je abonnement binnen 5 minuten geregeld
+  
+  </h1>
 
+  <form action="#" method="POST">
 
+    <!-- 1. Voornaam -->
+    <p>
+      <label for="voornaam">Voornaam:</label><br>
+      <input type="text" id="voornaam" name="voornaam" pattern="^[^\d]+$" title="Geen cijfers toegestaan" required>
+    </p>
 
-            </section>
-            <footer>
-                <ul>
-                    <li><a href="https://www.google.com/">over Hallo Hi </a></li>
-                    <li><a href="https://www.google.com/">voorwaarden</a></li>
-                    <li><a href="https://www.google.com/">privacy</a></li>
-                </ul>
-                <button>ontdek het op google play</button>  
-                <button>download in de app store</button>
-               
-                <a href="https://www.google.com/">
-                    <img src="" alt="app store logo">
-                    download in de app store
-                    </a>
+    <!-- 2. Achternaam -->
+    <p>
+      <label for="achternaam">Achternaam:</label> <br>
+      <input type="text" id="achternaam" name="achternaam" pattern="^[^\d]+$" title="Geen cijfers toegestaan" required>
+    </p>
 
+    <!-- 3. Aanhef -->
+    <p>
+      <label>Aanhef:</label><br>
+      <input type="radio" id="dhr" name="aanhef" value="Dhr." checked required>
+      <label for="dhr">Dhr.</label>
 
+      <input type="radio" id="mevr" name="aanhef" value="Mevr.">
+      <label for="mevr">Mevr.</label>
 
-               
+      <input type="radio" id="anders" name="aanhef" value="Anders">
+      <label for="anders">Anders</label>
+    </p>
 
-   
-            </footer>
+    <!-- 4. Straat met huisnummer -->
+    <p>
+      <label for="adres">Straat met huisnummer:</label><br>
+      <input type="text" id="adres" name="adres" placeholder="Stationsweg 12" required>
+    </p>
 
+    <!-- 5. Postcode -->
+    <p>
+      <label for="postcode">Postcode:</label><br>
+      <input type="text" id="postcode" name="postcode" pattern="[1-9][0-9]{3}\s?[A-Za-z]{2}" placeholder="1234 AB" title="Formaat: 1234 AB" required>
+    </p>
 
-        </main>
-    </body>
+    <!-- 6. Woonplaats -->
+    <p>
+      <label for="woonplaats">Woonplaats:</label><br>
+      <input type="text" id="woonplaats" name="woonplaats" required>
+    </p>
 
-</html>
+    <!-- 7. Land -->
+    <p>
+      <label for="land">Land:</label><br>
+      <select id="land" name="land" required>
+        <option value="Nederland" selected>Nederland</option>
+        <option value="België">België</option>
+        <option value="Duitsland">Duitsland</option>
+      </select>
+    </p>
+
+    <!-- 8. IBAN-nummer -->
+    <p>
+      <label for="iban">IBAN-nummer:</label><br>
+      <input type="text" id="iban" name="iban
