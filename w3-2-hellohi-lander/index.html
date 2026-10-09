@@ -1,144 +1,71 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abonnementsformulier - Hallo Hi</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f5f9;
-      margin: 0;
-      padding: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 3-1</title>
 
-    .form-container {
-      max-width: 600px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #333333;
-    }
-
-    .form-group {
-      margin-bottom: 18px;
-    }
-
-    label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 6px;
-      color: #444444;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="number"],
-    input[type="date"],
-    select {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      font-size: 14px;
-    }
-
-    .radio-group, .checkbox-group {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-      margin-top: 5px;
-    }
-
-    .radio-group label, .checkbox-group label {
-      font-weight: normal;
-      cursor: pointer;
-    }
-
-    button[type="submit"] {
-      width: 100%;
-      background-color: #8a2be2;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-
-    button[type="submit"]:hover {
-      background-color: #7220c3;
-    }
-  </style>
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li><a href="https://www.google.com/">internet + bellen</a></li>
+            <li><a href="https://www.google.com/">mobiel</a></li>
+            <li><a href="https://www.google.com/">entertainment</a></li>
+            <li><a href="https://www.google.com/">service</a></li>
+        </ul>
+    </nav>
+    <header>
+        <main>
 
-<div class="form-container">
-  <h2>Je abonnement binnen 5 minuten geregeld</h2>
-  
-  <form action="#" method="POST">
+            <h1>Hallo hi</h1></header>
+                     
+            <section>
+                <p>Hallo, Internet + Bellen van Hallo Hi...</p>
+                <p>kies uit.......</p>
+                <button>bekijk deal</button>
+                <button>ontdek meer</button>
+            </section>
+            <section>
+                <h2>het beste van TV en Mobiel</h2>
+                <p>geen aansluit kosten en volop extra voordelen</p>
+                <ul>
+                <li>onbeperkt data</li>
+                <li>39,95/mnd</li>
+                <li>snelheid tot 1Gbit/s</li>
+                <li> zelf je pakket samen</li>
+                </ul>
+                <img src="" alt="">
+                <button>ontdek Mobiel en TV</button>
 
-    <!-- 1. Voornaam -->
-    <div class="form-group">
-      <label for="voornaam">Voornaam</label>
-      <input type="text" id="voornaam" name="voornaam" pattern="^[^\d]+$" title="Geen cijfers toegestaan" required>
-    </div>
 
-    <!-- 2. Achternaam -->
-    <div class="form-group">
-      <label for="achternaam">Achternaam</label>
-      <input type="text" id="achternaam" name="achternaam" pattern="^[^\d]+$" title="Geen cijfers toegestaan" required>
-    </div>
 
-    <!-- 3. Aanhef -->
-    <div class="form-group">
-      <label>Aanhef</label>
-      <div class="radio-group">
-        <label><input type="radio" name="aanhef" value="Dhr." checked required> Dhr.</label>
-        <label><input type="radio" name="aanhef" value="Mevr."> Mevr.</label>
-        <label><input type="radio" name="aanhef" value="Anders"> Anders</label>
-      </div>
-    </div>
+            </section>
+            <footer>
+                <ul>
+                    <li><a href="https://www.google.com/">over Hallo Hi </a></li>
+                    <li><a href="https://www.google.com/">voorwaarden</a></li>
+                    <li><a href="https://www.google.com/">privacy</a></li>
+                </ul>
+                <button>ontdek het op google play</button>  
+                <button>download in de app store</button>
+               
+                <a href="https://www.google.com/">
+                    <img src="" alt="app store logo">
+                    download in de app store
+                    </a>
 
-    <!-- 4. Straat met huisnummer -->
-    <div class="form-group">
-      <label for="adres">Straat met huisnummer</label>
-      <input type="text" id="adres" name="adres" placeholder="bijv. Stationsweg 12" required>
-    </div>
 
-    <!-- 5. Postcode -->
-    <div class="form-group">
-      <label for="postcode">Postcode</label>
-      <input type="text" id="postcode" name="postcode" pattern="[1-9][0-9]{3}\s?[A-Za-z]{2}" placeholder="1234 AB" title="Formaat: 1234 AB" required>
-    </div>
 
-    <!-- 6. Woonplaats -->
-    <div class="form-group">
-      <label for="woonplaats">Woonplaats</label>
-      <input type="text" id="woonplaats" name="woonplaats" required>
-    </div>
+               
 
-    <!-- 7. Land -->
-    <div class="form-group">
-      <label for="land">Land</label>
-      <select id="land" name="land" required>
-        <option value="Nederland" selected>Nederland</option>
-        <option value="België">België</option>
-        <option value="Duitsland">Duitsland</option>
-      </select>
-    </div>
+   
+            </footer>
 
-    <!-- 8. IBAN-nummer -->
-    <div class="form-group">
-      <label for="iban">IBAN-nummer</label>
-      <input type="text" id="iban" name="
+
+        </main>
+    </body>
+
+</html>
