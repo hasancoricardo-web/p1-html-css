@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hallo Hi, Abbonnomentsformulier</title>
+</head>
+<body>
+
+<h1>Hallo Hi, Abbonomentsformulier</h1>
+
+<!--Voornaam-->
+<form action="#" method="post">
+<label for="Voornaam">Voornaam</label>
+<input type="text"id="Voornaam"name="voornaam"
+pattern="[A-Za-zÀ-ÿ\s-]+"
+title="Gebruik alleen letters" required>
+<br>
+<br>
+<!--Achternaam-->
+<form action="#" method="post">
+<label for="Achternaam">Achternaam</label>
+<input type="text"id="Achternaam"name="Achternaam"
+pattern="[A-Za-zÀ-ÿ\s-]+"
+title="Gebruik alleen letters" required>
+<br>
+<br>
+
+<!--Aanhef-->
+<label> Aanhef</label>
+<input type="radio" id="dhr" name="aanhef" value="Dhr."checked>
+<label for="dhr">Dhr.</label>
+
+<input type="radio" id="Mvr" name="aanhef" value="Mvr.">
+<label for="Mvr">Mvr.</label>
+
+<input type="radio" id="Anders" name="aanhef" value="Anders.">
+<label for="Anders">Anders.</label>
+<br>
+<br>
+<!--straat-->
+<label for="straat">Straat met huisnummer</label>
+<input type="text" id="name" name="straat" placeholder="Stationsweg 12" required>
+<br>
+<br>
+<label for="postcode">Postcode</label>
+<input type="text" id="postcode" name="postcode"
+pattern="[1-9][0-9]{3}\s?[A-Z]{2}"
+placeholder="1234 AB"
+required>
+<br>
+<br>
+
+<!--IBAN-->
+<label for="iban">IBAN-nummer</label>
+<input type="text" id="iban" name="iban"
+maxlength="18"
+pattern="NL[0-9]{2}[A-Z]{4}{10}"
+placeholder="NL91ABNA0417164300"
+required><br><br>
+
+
+<!--Abonnoment-->
+<label for="abonnement">Type Abonement</label>
+<select id="abonnement" name="abonnement" required>
+<option value="">Kies een abonnement</option>
+<option>Mobiel</option>
+<option>Glasvezel</option>
+<option>TV</option>
+</select>
+
+<br><br>
+<!--ingangsdatum-->
+<label for="datum">Datum van ingang abonnement:</label><br>
+<input type="date" id="datum" name="datum" min="2026-09-24" required>
+
+
+</form>
+
+
+
+</body>
+</html>
