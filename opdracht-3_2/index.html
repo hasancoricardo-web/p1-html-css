@@ -7,7 +7,7 @@
 
 <h1>Hallo Hi, Abbonomentsformulier</h1>
 
-<!--Voornaam-->
+
 <form action="#" method="post">
 <label for="Voornaam">Voornaam</label>
 <input type="text"id="Voornaam"name="voornaam"
@@ -15,7 +15,7 @@ pattern="[A-Za-zÀ-ÿ\s-]+"
 title="Gebruik alleen letters" required>
 <br>
 <br>
-<!--Achternaam-->
+
 <form action="#" method="post">
 <label for="Achternaam">Achternaam</label>
 <input type="text"id="Achternaam"name="Achternaam"
@@ -24,7 +24,7 @@ title="Gebruik alleen letters" required>
 <br>
 <br>
 
-<!--Aanhef-->
+
 <label> Aanhef</label>
 <input type="radio" id="dhr" name="aanhef" value="Dhr."checked>
 <label for="dhr">Dhr.</label>
@@ -36,7 +36,7 @@ title="Gebruik alleen letters" required>
 <label for="Anders">Anders.</label>
 <br>
 <br>
-<!--straat-->
+
 <label for="straat">Straat met huisnummer</label>
 <input type="text" id="name" name="straat" placeholder="Stationsweg 12" required>
 <br>
@@ -49,7 +49,36 @@ required>
 <br>
 <br>
 
-<!--IBAN-->
+<form>
+  
+
+  
+
+ 
+
+  <div>
+    <label for="woonplaats">Woonplaats:</label><br>
+    <input type="text" id="woonplaats" name="woonplaats" placeholder="Bijv. Amsterdam" required>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="land">Land:</label><br>
+    <select id="land" name="land">
+      <option value="nl" selected>Nederland</option>
+      <option value="be">België</option>
+      <option value="de">Duitsland</option>
+      <option value="fr">Frankrijk</option>
+      <option value="overig">Overig</option>
+    </select>
+  </div>
+
+  <br>
+  
+</form>
+
+
 <label for="iban">IBAN-nummer</label>
 <input type="text" id="iban" name="iban"
 maxlength="18"
@@ -58,7 +87,6 @@ placeholder="NL91ABNA0417164300"
 required><br><br>
 
 
-<!--Abonnoment-->
 <label for="abonnement">Type Abonement</label>
 <select id="abonnement" name="abonnement" required>
 <option value="">Kies een abonnement</option>
@@ -68,12 +96,56 @@ required><br><br>
 </select>
 
 <br><br>
-<!--ingangsdatum-->
+
 <label for="datum">Datum van ingang abonnement:</label><br>
-<input type="date" id="datum" name="datum" min="2026-09-24" required>
+<input type="date" id="datum" name="datum" min="2026-10-14" required>
+<br><br>
+
+<form action="#" method="post">
+<label for="E-mail">E-mail adres</label>
+<input type="text"id="Voornaam"name="voornaam"
+pattern="[A-Za-zÀ-ÿ\s-]+"
+title="Gebruik alleen letters" required>
+<br>
+<br>
+
+<label for="wachtwoord">Wachtwoord</label>
+    <input type="password" name="wachtwoord" placeholder="Voer je wachtwoord in">
+
+<br>
+<br>
+<form>
+  
+ 
+
+  
+  <div>
+    <label for="looptijd">Looptijd abonnement (in maanden):</label><br>
+    <input type="number" id="looptijd" name="looptijd" value="12" min="1" max="60">
+  </div>
+
+  <br>
+  
+  
+
+  <form>
+   <div>
+    <label for="gebruikers">Aantal gebruikers:</label><br>
+    <input type="number" id="gebruikers" name="gebruikers" value="1" min="1" max="4">
+    <br><br>
+<button type="submit">Versturen</button>
+  </div>
+
+
+  <br>
+  
+
+</form>
+</form>
 
 
 </form>
+
 
 
 
