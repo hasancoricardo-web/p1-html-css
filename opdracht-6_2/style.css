@@ -1,0 +1,30 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #1519e6f9;
+     background-color: #2b8700f9;
+    }
+
+.box2{
+    width: 200px;
+    height: 200px;
+    
+    background-color: #f70000f9;
+}
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: #000000f9;
+}
+
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: #1519e6f9;
+}
+
+.container{
+display: flex;
+
+gap: 100px;}
