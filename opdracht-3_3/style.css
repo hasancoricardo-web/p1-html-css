@@ -1,0 +1,27 @@
+table{border-collapse:separate;
+    border-spacing:0;
+    width:100%;
+    max-width:550px;
+    color:white;
+    font-family: arial sans-serif;
+    border-bottom-right-radius: 50px;
+    overflow:hidden;
+    background: black;
+}
+    th{
+        background: #aaa9e8;
+        padding: 15px 20px;
+        font-weight:normal;
+        text-align:left;  
+    }
+
+    td{
+        background: black;
+        padding: 15px 20px;
+        text-align:left;  
+    }
+
+    td:first-child{
+        background-color:#7271d1;
+
+}
