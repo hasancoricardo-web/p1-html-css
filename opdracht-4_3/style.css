@@ -1,0 +1,108 @@
+body{
+margin: 0;
+background-color:#000000;
+
+}
+nav {
+display: flex;
+justify-content: flex-start; 
+}
+
+nav span, nav a {
+color: #ffffff;
+text-decoration: none;
+font-size: 14px;
+font-weight: 500;
+}
+header{
+background-color:#000000;
+color:#ffffff;
+padding-left: 25px;
+}
+header h1 {
+font-size: 3.5rem;
+margin: 0;
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.hi-badge {
+border: 2px solid #50e3c2;
+color: #50e3c2;
+border-radius: 50%;
+padding: 5px 18px;
+font-size: 0.6em;
+display: inline-block;
+}
+section{
+background-color:#ffffff;
+color:#000000;
+}
+section:first-child{
+background-color:#000000;
+color:#ffffff;
+padding-left: 20px;
+}
+section:nth-child(2){
+background-color:#ffffff;
+color: #000000;
+padding-left: 25px;
+}
+footer{background-color:#9000ff;
+color: white;
+padding: 15px;
+}
+.BekijkDeal{
+background-color:#000000;
+color: #ffffff;
+border-radius: 10px;
+padding: 17px;
+}
+.OnderzoekNaar{
+background-color:#9000ff;
+color: #ffffff;
+border-radius: 10px;
+padding: 17px;
+}
+@font-face {
+font-family: ftltlt-webfont;
+src: url(ftltlt-webfont.woff);
+}
+body{
+font-family: ftltlt-webfont;
+}
+.Ontdekmobielentv{
+background-color:#000000;
+color: #ffffff;
+border-radius: 10px;
+padding: 17px;
+}
+.sectie-afbeelding {
+border-radius: 15px;
+max-width: 50%;
+height: 150px;
+padding-left: 600px;
+}
+
+.footer-nav a {
+color: #ffffff;
+text-decoration: none;
+font-weight: 500;
+}
+.footer-nav a:hover {
+text-decoration: underline;
+}
+footer {
+background: linear-gradient(90deg, #7272dd, #9000ff);
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.footer-nav {
+display: flex;
+list-style: none;
+gap: 30px; 
+padding: 0;
+margin: 0;
+}
