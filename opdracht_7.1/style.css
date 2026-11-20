@@ -1,65 +1,76 @@
-body {
-  margin: 0;
-  color: white;
-  background-color: #e0e0e0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-.telefoon {
-  max-width: 360px;
-  margin: 0 auto;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 147px;
+    padding: 0 35px;
+    background-color: #6a6fe3;
+    color: white;
 }
 
-
-.header {
-  background-color: #6366f1;
-  padding: 20px 25px;
+.menu-blokje {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
 }
 
-.logo {
-  font-size: 32px;
-  font-weight: bold;
+section {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
 
-.vierkant {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  float: right;
-  margin-top: 10px;
+.sectie1 { background-color: #7fd6de; }
+.sectie2 { background-color: #de58fa; }
+.sectie3 { background-color: #30356b; }
+
+@media (min-width: 800px) {
+    header {
+        justify-content: center;
+        background-color: #ff6b81;
+    }
+
+    .menu-blokje {
+        display: none;
+    }
+
+    section {
+        display: block;
+        height: 390px;
+        text-align: left;
+    }
+
+    .sectie1 { background-color: #ff4455; }
+    .sectie2 { background-color: #5555e8; }
+    .sectie3 { background-color: #3a44fa; }
 }
 
+@media (min-width: 1024px) {
+    header {
+        justify-content: space-between;
+        height: 130px;
+        padding: 0 120px;
+        background-color: #ed4e4e;
+    }
 
-.blok {
-  text-align: center;
-  padding: 50px 40px;
-}
+    section {
+        height: 395px;
+        padding: 30px 120px;
+        color: black;
+    }
 
-
-.blok h2 {
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-
-.blok p {
-  font-size: 16px;
-  line-height: 1.35;
-  margin: 0;
-}
-
-
-.lichtblauw {
-  background-color: #72d5db;
-}
-
-.paars {
-  background-color: #e052ff;
-}
-
-.donkerblauw {
-  background-color: #31336b;
-}
+    .sectie1 { background-color: #facc22; }
+    .sectie2 { background-color: #f0912a; }
+    .sectie3 { background-color: #69b14c; }
+} 
