@@ -3,13 +3,13 @@
   justify-content: space-around;
   max-width: 1200px;
 }
-
-
+ 
+ 
 .dropdown {
   position: relative;
 }
-
-
+ 
+ 
 .submenu {
   display: flex;
   flex-direction: column;
@@ -20,9 +20,10 @@
   opacity: 0;
   visibility: hidden;
 }
-
-
+ 
+ 
 .dropdown:hover .submenu {
   opacity: 1;
   visibility: visible;
 }
+ 
